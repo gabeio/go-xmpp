@@ -72,6 +72,7 @@ type Presence struct {
 	Type    string   `xml:"type,attr,omitempty"`
 	To      string   `xml:"to,attr,omitempty"`
 	From    string   `xml:"from,attr,omitempty"`
+	Payload string   `xml:",innerxml"`
 }
 
 // XMPP <error/>. May occur as a top-level stanza or embedded in another
